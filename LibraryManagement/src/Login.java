@@ -2,6 +2,7 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -21,7 +22,7 @@ public class Login extends javax.swing.JFrame {
      * Creates new form Forgot
      */
     public Login() {
-        super ("Login");
+    	super ("Login");
         initComponents();
         conn = javaconnect.ConnecrDb();
     }
@@ -55,9 +56,9 @@ public class Login extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 0, 51));
         jLabel5.setText("Troble Login!...");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\workspace\\LibraryManagement\\icon\\lock.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Downloads\\icon\\lock.png")); // NOI18N
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\workspace\\LibraryManagement\\icon\\login.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Downloads\\icon\\login.png")); // NOI18N
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,7 +66,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\workspace\\LibraryManagement\\icon\\new acc.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Downloads\\icon\\new acc.png")); // NOI18N
         jButton2.setText("Sign up");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,7 +77,7 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Username: ");
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\workspace\\LibraryManagement\\icon\\forgot.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Downloads\\icon\\forgot.png")); // NOI18N
         jButton3.setText("Forgot Password");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,7 +85,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\workspace\\LibraryManagement\\icon\\key.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Downloads\\icon\\key.png")); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel2.setText("Password:");
@@ -160,13 +161,37 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pack();
+        setSize(new java.awt.Dimension(478, 315));
+        setLocationRelativeTo(null);
     }// </editor-fold>                        
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        String sql="select * from Account where Username = ? and Password = ?";
+        try{
+            pst=conn.prepareStatement(sql);
+            pst.setString(1,jTextField1.getText());
+            pst.setString(2,jPasswordField1.getText());
+            rs=pst.executeQuery();
+            if(rs.next()){
+                rs.close();
+                pst.close();
+                setVisible(false);
+                Loading ob = new Loading();
+                ob.setUpLoading();
+                ob.setVisible(true);
+            }else{
+                JOptionPane.showMessageDialog(null, "Incorrect Username and Password");
+            }
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, e);
+        }finally{
+            try{
+            rs.close();
+            pst.close();
+        }catch(Exception e){
+                }
     }                                        
-
+    }
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
         setVisible(false);
