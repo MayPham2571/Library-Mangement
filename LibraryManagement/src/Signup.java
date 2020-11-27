@@ -1,3 +1,14 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author ACER
+ */
+  
 import java.sql.*;
 import javax.swing.JOptionPane;
 
@@ -47,7 +58,7 @@ public class Signup extends javax.swing.JFrame {
 
         jLabel4.setText("Answer:");
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Downloads\\icon\\Create.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("Create.png"))); // NOI18N
         jButton1.setText("Create");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,7 +72,7 @@ public class Signup extends javax.swing.JFrame {
 
         jLabel3.setText("Your Security Question:");
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Downloads\\icon\\back.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("back.png"))); // NOI18N
         jButton2.setText("Back");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,7 +162,8 @@ public class Signup extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pack();
+        setSize(new java.awt.Dimension(469, 411));
+        setLocationRelativeTo(null);
     }// </editor-fold>                        
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
