@@ -1,3 +1,8 @@
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Random;
+import javax.swing.JOptionPane;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,12 +14,21 @@
  * @author surface
  */
 public class NewStudent extends javax.swing.JFrame {
-
+    Connection conn;
+    ResultSet rs;
+    PreparedStatement pst;
     /**
      * Creates new form NewStudent
      */
     public NewStudent() {
-        initComponents();
+       super ("New Book");
+       initComponents();
+       conn = javaconnect.ConnecrDb();
+       Random();
+    }
+    public void Random(){
+        Random rd = new Random();
+        jTextField2.setText("" + rd.nextInt(2000+1));
     }
 
     /**
@@ -72,6 +86,11 @@ public class NewStudent extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton1.setForeground(new java.awt.Color(232, 23, 93));
         jButton1.setText("Add");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton2.setForeground(new java.awt.Color(232, 23, 93));
@@ -165,6 +184,23 @@ public class NewStudent extends javax.swing.JFrame {
         Home ha = new Home();
         ha.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        String sql = "insert into NBook (Student_ID,Name,Surname,Major,Year) values (?,?,?,?,?)";
+        try{
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, jTextField2.getText());
+            pst.setString(2, jTextField2.getText());
+            pst.setString(3, jTextField2.getText());
+            pst.setString(4, (String) jComboBox1.getSelectedItem());
+            pst.setString(5, (String) jComboBox2.getSelectedItem());
+            pst.execute();
+            JOptionPane.showMessageDialog(null, "New Student Added");
+        }catch (Exception e){
+            JOptionPane.showMessageDialog(null,e);
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
