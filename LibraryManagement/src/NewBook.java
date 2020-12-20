@@ -26,12 +26,12 @@ public class NewBook extends javax.swing.JFrame {
     public NewBook(){
         super ("New Book");
         initComponents();
-        conn = JavaConnectNgoc.ConnecrDb();
+        conn = javaconnect.ConnecrDb();
         Random();
     }
     public void Random(){
         Random rd = new Random();
-        jTextField1.setText("" + rd.nextInt(1000+1));
+        jTextField5.setText("" + rd.nextInt(2000+1));
     }
 
     /**
@@ -185,7 +185,7 @@ public class NewBook extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String sql = "insert into NewBook (Book ID, Book Name, Genre, Edition, Price) values (?,?,?,?,?)";
+        String sql = "insert into NBook (Book_ID,Book_Name,Genre,Edition,Price) values (?,?,?,?,?)";
         try{
             pst = conn.prepareStatement(sql);
             pst.setString(1, jTextField5.getText());
