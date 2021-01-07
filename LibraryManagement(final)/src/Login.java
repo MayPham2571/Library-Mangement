@@ -175,7 +175,9 @@ public class Login extends javax.swing.JFrame implements ILogin {
         setLocationRelativeTo(null);
     }// </editor-fold>                        
     @Override
-    public void LoginButton(java.awt.event.ActionEvent evt) {                                         
+    public void LoginButton(java.awt.event.ActionEvent evt) {    
+        String name = UsernameField.getText();
+        PrintInfo.getPrintInformation().printWelcome(name);
         String sql="select * from Account where Username = ? and Password = ?";
         try{
             pst=conn.prepareStatement(sql);
@@ -256,6 +258,7 @@ public class Login extends javax.swing.JFrame implements ILogin {
                 new Login().setVisible(true);
             }
         });
+        
     }
 
     // Variables declaration - do not modify                     
