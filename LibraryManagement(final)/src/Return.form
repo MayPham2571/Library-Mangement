@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="ReturnPanel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="ReturnPanel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="ReturnPanel">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="36" green="36" red="36" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="RETURN PANEL ">
+                  <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder>
+                      <Color PropertyName="color" blue="5d" green="17" red="e8" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                  <Font PropertyName="font" name="Tahoma" size="36" style="1"/>
+                  <Color PropertyName="color" blue="5d" green="17" red="e8" type="rgb"/>
+                </TitledBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace pref="18" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="StudentID" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Name" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Surname" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Major" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Year" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="StudentIDField" max="32767" attributes="0"/>
+                                  <Component id="NameField" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="SurnameField" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="MajorField" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="YearField" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="SearchStudentButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="BookID" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BookName" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Genre" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Edition" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Price" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ReturnDate" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DateOfIssue" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                      <Component id="ChooseDateReturn" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="DateOfIssueField" max="32767" attributes="0"/>
+                                          <Component id="BookIDField" pref="175" max="32767" attributes="0"/>
+                                          <Component id="BookNameField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="GenreField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="EditionField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="PriceField" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="523" max="-2" attributes="0"/>
+                              <Component id="ReturnButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                              <Component id="BackButton" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="24" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="StudentID" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="StudentIDField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BookID" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BookIDField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="SearchStudentButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Name" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="NameField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BookName" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BookNameField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Surname" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="SurnameField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Genre" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="GenreField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Major" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MajorField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Edition" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="EditionField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="Year" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="YearField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Price" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="PriceField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ReturnDate" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="DateOfIssueField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="DateOfIssue" min="-2" max="-2" attributes="0"/>
+                          <Component id="ChooseDateReturn" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ReturnButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BackButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="StudentID">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Student ID"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Name">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Name "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Surname">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Surname "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Major">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Major "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Year">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Year "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="StudentIDField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="NameField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="SurnameField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="MajorField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="YearField">
+            </Component>
+            <Component class="javax.swing.JLabel" name="BookID">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Book ID"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="BookName">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Book Name "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Genre">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Genre "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Edition">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Edition "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Price">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Price "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="BookIDField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="BookNameField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="GenreField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="EditionField">
+            </Component>
+            <Component class="javax.swing.JTextField" name="PriceField">
+            </Component>
+            <Component class="javax.swing.JLabel" name="ReturnDate">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="16" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Date of Issue "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="DateOfIssue">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="16" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Return Date:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="ReturnButton">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="16" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Search.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Return "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ReturnButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="BackButton">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="16" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/back.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Back "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BackButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="SearchStudentButton">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="16" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="7a" green="52" red="cc" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Search.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Search"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SearchStudentButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="com.toedter.calendar.JDateChooser" name="ChooseDateReturn">
+            </Component>
+            <Component class="javax.swing.JTextField" name="DateOfIssueField">
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
