@@ -31,19 +31,19 @@ public class Home extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jButton6 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        StatisticForm = new javax.swing.JButton();
+        NewBookForm = new javax.swing.JButton();
+        NewStudentForm = new javax.swing.JButton();
+        NewBookIcon = new javax.swing.JLabel();
+        NewStudentIcon = new javax.swing.JLabel();
+        StatisticIcon = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        IssueBookForm = new javax.swing.JButton();
+        ReturnBookForm = new javax.swing.JButton();
+        AboutForm = new javax.swing.JButton();
+        AboutIcon = new javax.swing.JLabel();
+        ReturnBookIcon = new javax.swing.JLabel();
+        IssueBookIcon = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -74,48 +74,48 @@ public class Home extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(232, 23, 93)), "OPERATION", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(232, 23, 93))); // NOI18N
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton6.setBackground(new java.awt.Color(168, 167, 168));
-        jButton6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(204, 82, 122));
-        jButton6.setText("Statistic");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        StatisticForm.setBackground(new java.awt.Color(168, 167, 168));
+        StatisticForm.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        StatisticForm.setForeground(new java.awt.Color(204, 82, 122));
+        StatisticForm.setText("Statistic");
+        StatisticForm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                StatisticFormActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 128, -1));
+        jPanel1.add(StatisticForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 128, -1));
 
-        jButton4.setBackground(new java.awt.Color(168, 167, 168));
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(204, 82, 122));
-        jButton4.setText("New Book");
-        jButton4.setBorderPainted(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        NewBookForm.setBackground(new java.awt.Color(168, 167, 168));
+        NewBookForm.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        NewBookForm.setForeground(new java.awt.Color(204, 82, 122));
+        NewBookForm.setText("New Book");
+        NewBookForm.setBorderPainted(false);
+        NewBookForm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                NewBookFormActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 128, -1));
+        jPanel1.add(NewBookForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 128, -1));
 
-        jButton5.setBackground(new java.awt.Color(168, 167, 168));
-        jButton5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(204, 82, 122));
-        jButton5.setText("New Student");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        NewStudentForm.setBackground(new java.awt.Color(168, 167, 168));
+        NewStudentForm.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        NewStudentForm.setForeground(new java.awt.Color(204, 82, 122));
+        NewStudentForm.setText("New Student");
+        NewStudentForm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                NewStudentFormActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, -1, -1));
+        jPanel1.add(NewStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/128276131_198361841824973_785138835260618980_n.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 31, -1, -1));
+        NewBookIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/128276131_198361841824973_785138835260618980_n.png"))); // NOI18N
+        jPanel1.add(NewBookIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 31, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/128382482_411902566794700_2947818827782075943_n.png"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(339, 31, -1, -1));
+        NewStudentIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/128382482_411902566794700_2947818827782075943_n.png"))); // NOI18N
+        jPanel1.add(NewStudentIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(339, 31, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/127246972_420232802472382_6607313009987960196_n.png"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(659, 31, -1, -1));
+        StatisticIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/127246972_420232802472382_6607313009987960196_n.png"))); // NOI18N
+        jPanel1.add(StatisticIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(659, 31, -1, -1));
 
         jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 123, 830, 200));
 
@@ -123,47 +123,47 @@ public class Home extends javax.swing.JFrame {
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(232, 23, 93)), "ACTION ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(232, 23, 93))); // NOI18N
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton9.setBackground(new java.awt.Color(168, 167, 168));
-        jButton9.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(204, 82, 122));
-        jButton9.setText("Issue Book");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        IssueBookForm.setBackground(new java.awt.Color(168, 167, 168));
+        IssueBookForm.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        IssueBookForm.setForeground(new java.awt.Color(204, 82, 122));
+        IssueBookForm.setText("Issue Book");
+        IssueBookForm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                IssueBookFormActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 168, -1, -1));
+        jPanel4.add(IssueBookForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 168, -1, -1));
 
-        jButton10.setBackground(new java.awt.Color(168, 167, 168));
-        jButton10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(204, 82, 122));
-        jButton10.setText("Return Book");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        ReturnBookForm.setBackground(new java.awt.Color(168, 167, 168));
+        ReturnBookForm.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        ReturnBookForm.setForeground(new java.awt.Color(204, 82, 122));
+        ReturnBookForm.setText("Return Book");
+        ReturnBookForm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                ReturnBookFormActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 168, -1, -1));
+        jPanel4.add(ReturnBookForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 168, -1, -1));
 
-        jButton11.setBackground(new java.awt.Color(168, 167, 168));
-        jButton11.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(204, 82, 122));
-        jButton11.setText("About ");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        AboutForm.setBackground(new java.awt.Color(168, 167, 168));
+        AboutForm.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        AboutForm.setForeground(new java.awt.Color(204, 82, 122));
+        AboutForm.setText("About ");
+        AboutForm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                AboutFormActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(641, 168, 128, -1));
+        jPanel4.add(AboutForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(641, 168, 128, -1));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/5a3813d34861c6.6832170315136245312965.png"))); // NOI18N
-        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(657, 31, -1, -1));
+        AboutIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/5a3813d34861c6.6832170315136245312965.png"))); // NOI18N
+        jPanel4.add(AboutIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(657, 31, -1, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning.png"))); // NOI18N
-        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, -1, -1));
+        ReturnBookIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/learning.png"))); // NOI18N
+        jPanel4.add(ReturnBookIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, -1, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clipart4241261.png"))); // NOI18N
-        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+        IssueBookIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/clipart4241261.png"))); // NOI18N
+        jPanel4.add(IssueBookIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
         jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 336, 830, 210));
 
@@ -258,45 +258,45 @@ public class Home extends javax.swing.JFrame {
         log.setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void NewBookFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NewBookFormActionPerformed
     setVisible (false);
         NewBook nb = new NewBook();
         nb.setVisible(true);
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_NewBookFormActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void NewStudentFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NewStudentFormActionPerformed
         setVisible (false);
         NewStudent ns = new NewStudent();
         ns.setVisible(true);
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_NewStudentFormActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void ReturnBookFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReturnBookFormActionPerformed
         // TODO add your handling code here:
         setVisible(false);
         Return  ob = new Return ();
         ob.setVisible(true);
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_ReturnBookFormActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void IssueBookFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IssueBookFormActionPerformed
         // TODO add your handling code here:
         setVisible(false);
         Issue ob = new Issue();
         ob.setVisible(true);
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_IssueBookFormActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void AboutFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AboutFormActionPerformed
         // TODO add your handling code here:
         setVisible (false);
         About ab = new About();
         ab.setVisible(true);
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_AboutFormActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void StatisticFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StatisticFormActionPerformed
             // TODO add your handling code here:
             setVisible (false);
             Statistic ob = new Statistic();
             ob.setVisible(true);
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_StatisticFormActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
@@ -341,20 +341,20 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton AboutForm;
+    private javax.swing.JLabel AboutIcon;
+    private javax.swing.JButton IssueBookForm;
+    private javax.swing.JLabel IssueBookIcon;
+    private javax.swing.JButton NewBookForm;
+    private javax.swing.JLabel NewBookIcon;
+    private javax.swing.JButton NewStudentForm;
+    private javax.swing.JLabel NewStudentIcon;
+    private javax.swing.JButton ReturnBookForm;
+    private javax.swing.JLabel ReturnBookIcon;
+    private javax.swing.JButton StatisticForm;
+    private javax.swing.JLabel StatisticIcon;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
