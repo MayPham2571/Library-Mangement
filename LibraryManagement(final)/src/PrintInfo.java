@@ -22,9 +22,12 @@ private static final PrintInfo print = new PrintInfo();
 public void printWelcome(String name){
 	JOptionPane.showMessageDialog(null,"Welcome back, " + name + "!");
 }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 7d31e8f6ea3fd7632e945498a816596fbcc59664
 }
 
     class getPrintInformation {
